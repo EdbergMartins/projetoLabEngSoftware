@@ -240,7 +240,7 @@ public class ViewCadastro extends JFrame {
 		return false;
 	}
 	
-	public static boolean checkCpf (String CPF) {
+	public boolean checkCpf (String CPF) {
 		
 		if (CPF.equals("00000000000") ||
 		            CPF.equals("11111111111") ||
@@ -302,7 +302,7 @@ public class ViewCadastro extends JFrame {
 		            CPF.substring(6, 9) + "-" + CPF.substring(9, 11));
 		        }
 		        
-		        public static boolean checkEmail(String email) {
+		        public boolean checkEmail(String email) {
 		            String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
 		            java.util.regex.Pattern p = java.util.regex.Pattern.compile(ePattern);
 		            java.util.regex.Matcher m = p.matcher(email);
